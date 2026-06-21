@@ -10,6 +10,7 @@ const bookSchema = z.object({
   description: z.string().max(500).optional(),
   coverColor: z.string().max(20).optional().nullable(),
   coverPattern: z.string().max(50).optional().nullable(),
+  colorPreset: z.string().max(50).optional().nullable(),
   isPublic: z.boolean().optional().default(false),
 })
 

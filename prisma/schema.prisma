@@ -32,6 +32,7 @@ model Book {
   description  String?
   coverColor   String?
   coverPattern String?
+  colorPreset  String?
   isPublic     Boolean  @default(false)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
